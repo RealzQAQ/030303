@@ -1,0 +1,8 @@
+name: 富途规则保留
+desc: Futu / Moomoo rules
+
+rules:
+  - DOMAIN-SUFFIX,moomoo.com,💹 富途APP
+  - DOMAIN-SUFFIX,futu5.com,💹 富途APP
+  - DOMAIN-SUFFIX,futunk.com,💹 富途APP
+  - DOMAIN-SUFFIX,futunn.com,💹 富途APP
