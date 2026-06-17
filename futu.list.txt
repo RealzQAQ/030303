@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,moomoo.com
+DOMAIN-SUFFIX,futu5.com
+DOMAIN-SUFFIX,futunk.com
+DOMAIN-SUFFIX,futunn.com
