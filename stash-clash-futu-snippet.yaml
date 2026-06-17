@@ -1,0 +1,20 @@
+rule-providers:
+  futu:
+    type: http
+    behavior: domain
+    format: yaml
+    path: ./ruleset/futu.yaml
+    url: https://example.com/futu.yaml
+    interval: 86400
+
+proxy-groups:
+  - name: "💹 富途APP"
+    type: select
+    proxies:
+      - 香港节点
+      - 新加坡节点
+      - 手动切换
+      - DIRECT
+
+rules:
+  - RULE-SET,futu,💹 富途APP
