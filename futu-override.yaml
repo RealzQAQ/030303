@@ -1,6 +1,16 @@
 name: 富途规则保留
 desc: Futu / Moomoo rules
 
+proxy-groups:
+  - name: 💹 富途APP
+    type: select
+    proxies:
+      - 🚀 节点代理
+      - 🎯 绕过代理
+      - 🇭🇰 香港宽频D1
+      - 🇭🇰 香港宽频D2
+      - DIRECT
+
 rules:
   - DOMAIN-SUFFIX,moomoo.com,💹 富途APP
   - DOMAIN-SUFFIX,futu5.com,💹 富途APP
