@@ -1,0 +1,24 @@
+name: 富途规则保留
+desc: 为富途和 moomoo 追加规则与策略组，避免订阅更新后丢失
+
+proxy-groups:
+  - name: 💹 富途APP
+    type: select
+    proxies:
+      - 🚀 节点代理
+      - 🎯 绕过代理
+      - 🇭🇰 香港宽频D1
+      - 🇭🇰 香港宽频D2
+      - 🇭🇰 香港宽频D3
+      - 🇭🇰 香港移动联通优化1 [0.5]
+      - 🇭🇰 香港GIA1 [4.0]
+      - 🇭🇰 香港GIA2 [4.0]
+      - 🇸🇬 新加坡D3
+      - 🇸🇬 新加坡D4
+      - DIRECT
+
+rules:
+  - DOMAIN-SUFFIX,moomoo.com,💹 富途APP
+  - DOMAIN-SUFFIX,futu5.com,💹 富途APP
+  - DOMAIN-SUFFIX,futunk.com,💹 富途APP
+  - DOMAIN-SUFFIX,futunn.com,💹 富途APP
