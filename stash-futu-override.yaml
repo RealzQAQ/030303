@@ -5,7 +5,10 @@ proxy-groups:
   - name: 富途APP
     type: select
     proxies:
-      - 自动选择
+      - DIRECT
+      - "🚀 节点代理"
+      - "♻️ 自动选择"
+      - "🎯 绕过代理"
 
 rules:
   - DOMAIN-SUFFIX,moomoo.com,富途APP
