@@ -1,0 +1,19 @@
+rule-providers:
+  futu:
+    type: http
+    behavior: domain
+    format: yaml
+    path: ./rule-providers/futu.yaml
+    url: https://cdn.jsdelivr.net/gh/RealzQAQ/030303@main/futu.yaml
+    interval: 86400
+
+proxy-groups:
+  - name: 富途APP
+    type: select
+proxies:
+  - 香港节点
+  - 新加坡节点
+  - DIRECT
+
+rules:
+  - RULE-SET,futu,富途APP
