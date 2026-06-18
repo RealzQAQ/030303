@@ -5,9 +5,6 @@ proxy-groups:
   - name: 富途APP
     type: select
     proxies:
-      - 节点代理
-      - 自动选择
-      - 绕过代理
       - DIRECT
 
 rules:
