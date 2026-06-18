@@ -1,19 +1,13 @@
-rule-providers:
-  futu:
-    type: http
-    behavior: domain
-    format: yaml
-    path: ./rule-providers/futu.yaml
-    url: https://cdn.jsdelivr.net/gh/RealzQAQ/030303@main/futu.yaml
-    interval: 86400
+name: 富途规则保留
+desc: 给富途和 moomoo 添加独立规则组
 
 proxy-groups:
-  - name: 富途APP
+  - name: "富途APP"
     type: select
-proxies:
-  - 节点代理
-  - 自动选择
-  - DIRECT
+    proxies: ["节点代理", "自动选择", "绕过代理", "DIRECT"]
 
 rules:
-  - RULE-SET,futu,富途APP
+  - DOMAIN-SUFFIX,moomoo.com,富途APP
+  - DOMAIN-SUFFIX,futu5.com,富途APP
+  - DOMAIN-SUFFIX,futunk.com,富途APP
+  - DOMAIN-SUFFIX,futunn.com,富途APP
