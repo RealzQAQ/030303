@@ -1,0 +1,14 @@
+name: 富途规则保留
+desc: 富途规则独立分流
+
+proxy-groups:
+  - name: 富途APP
+    type: select
+    proxies:
+      - 自动选择
+
+rules:
+  - DOMAIN-SUFFIX,moomoo.com,富途APP
+  - DOMAIN-SUFFIX,futu5.com,富途APP
+  - DOMAIN-SUFFIX,futunk.com,富途APP
+  - DOMAIN-SUFFIX,futunn.com,富途APP
