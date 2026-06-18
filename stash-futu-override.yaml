@@ -11,8 +11,8 @@ proxy-groups:
   - name: 富途APP
     type: select
 proxies:
-  - 香港节点
-  - 新加坡节点
+  - 节点代理
+  - 自动选择
   - DIRECT
 
 rules:
