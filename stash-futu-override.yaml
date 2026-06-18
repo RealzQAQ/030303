@@ -1,10 +1,14 @@
 name: 富途规则保留
-desc: 给富途和 moomoo 添加独立规则组
+desc: 富途规则独立分流
 
 proxy-groups:
-  - name: "富途APP"
+  - name: 富途APP
     type: select
-    proxies: ["节点代理", "自动选择", "绕过代理", "DIRECT"]
+    proxies:
+      - 节点代理
+      - 自动选择
+      - 绕过代理
+      - DIRECT
 
 rules:
   - DOMAIN-SUFFIX,moomoo.com,富途APP
